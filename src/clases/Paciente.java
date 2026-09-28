@@ -98,6 +98,24 @@ public class Paciente {
 
         return "Normal / Sano  (Sigue así)";
     }
+
+    //Método de recomendación nutricional
+    public String brindarRecomendacion() {
+        String estado = EvaluarEstadoAnemia();
+        if(estado.contains("Severa")) {
+            return "Atención inmediata y suplementación";
+        }
+
+        if(estado.contains("Moderada")) {
+            return "Control mensual y dieta rica en hierro";
+        }
+
+        if(estado.contains("Leve")) {
+            return "Mejorar alimentación";
+        }
+
+        return "Mantener hábitos saludables";
+    }
 }
 
 

@@ -29,6 +29,7 @@ public class App {
 
         nutricion.listarPacientes();
         nutricion.generarAlertasCriticas();
+        nutricion.mostrarRecomendaciones();
     } 
 } 
 
