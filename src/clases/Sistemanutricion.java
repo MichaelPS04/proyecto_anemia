@@ -68,4 +68,12 @@ public class Sistemanutricion {
             System.out.println("No se detectaron pacientes en estado crítico moderado o severo.");
         }
     }
+
+    //Mostrar recomendaciones a los pacientes
+    public void mostrarRecomendaciones() {
+        System.out.println("\n ----RECOMENDACIONES NUTRICIONALES----");
+        for(Paciente p: listaPacientes) {
+            System.out.println(p.getNombre() + " -> " + p.brindarRecomendacion());
+        }
+    }
 }
